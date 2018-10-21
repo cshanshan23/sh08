@@ -1,4 +1,4 @@
-from appium import webdriver
+﻿from appium import webdriver
 
 def get_driver(pac, act):
     """
@@ -21,3 +21,4 @@ def get_driver(pac, act):
 
     # 声明我们的driver对象
     return webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+   # 定时任务

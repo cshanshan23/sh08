@@ -1,4 +1,4 @@
-from selenium.webdriver.common.by import By
+﻿from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
 
@@ -75,4 +75,4 @@ class Base:
         # 定位错误提示消息
         toast_xpath = "//*[contains(@text,'{}')]".format(mess)
         toast_message = self.search_element((By.XPATH, toast_xpath), timeout=5, poll_frequency=0.5).text
-        return toast_message
+        return toast_message   # 定时任务
